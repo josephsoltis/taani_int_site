@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>R/V Taani | Oregon State Universty </title>
+
+    <!-- everything linked below is to fonts from google fonts to be used later -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="OSUWelPg.css" />
+    <!--to create favicon on site make sure image is saved in file that in html of project, href is link to folder location then type defines an icon   -->
+    <link rel="shortcut icon" href="../Images/OSUfaviconlogo.png" type="image/x-icon" />
+
+
+</head>
+
+
+<body>
+
+    <!-- navagation -->
+    <nav class="navbar">
+        <div class="container bg-light">
+            <!-- div for logo -->
+            <div class="logo">
+                <a href="OSUWelPg.html">
+                    <img src="../Images/OSUVertLogoBlack.png" alt="logo" width="300px" height="100px" />
+                </a>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <!-- main menu, navigation bar li is link will have to make a seperate .html for each page last is a button -->
+                    <li>
+                        <a href="OSUWelPg.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="https://coriolix.sikuliaq.alaska.edu/">Coriolix</a>
+                    </li>
+                    <li>
+                        <a href="../Live Cams/LiveCamPg.html">Live Cams</a>
+                    </li>
+                    <li>
+                        <a href="../Our Team/OurTeamPg.html">Our Team</a>
+                    </li>
+
+                    <!-- hoem to our wiki posibly also defien what lab watch is and procedures for deployments, it things, could be an external link to another site with a login -->
+                    <li>
+                        <a href="#">Ship Info</a>
+                    </li>
+                    <!-- drop down to each section of page include ship map, food, safety, shared drives  -->
+                    <!-- phpne list, unanoymus complaint field of some kind, internal safety mangament documents  -->
+                    <li class="search-container">
+                        search here
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="hero-image" style="background-image: url(../Images/taani_float_temp_image.jpg);">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-heading text-xxl">
+                        Welcome Aboard the R/V Taani
+                    </h1>
+                    <p class="hero-text">
+                        As a new member of the ship, you are required to review the applicable information.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Naviagtion Section, ex. live feed of boat on map and two littel squares with ship heading and live feed of other ship nav like PRH, Temp, Speed -->
+    <section class="navigation">
+        <div class="navi-grid bg-secondary">
+            <!-- Left column: Livemap Image -->
+            <div class="navi-grid-item">
+                <img src="../Images/livemap-card stand in map.png" alt="Livemap Card Image" class="livemap-image">
+            </div>
+
+            <!-- Right column: Small Image and Nav Display Box -->
+            <div class="navi-grid-item right-column">
+                <img src="../Images/haeadng card image stand in.png" alt="Heading Card Image" class="small-image">
+                <div class="navdisplay-box">
+                    <div class="navdisplay-row">
+                        <div class="navdisplay-column label">Temp</div>
+                        <div class="navdisplay-column equals">=</div>
+                        <div class="navdisplay-column green-text">10&deg;C</div>
+                    </div>
+                    <div class="navdisplay-row">
+                        <div class="navdisplay-column label">Wind</div>
+                        <div class="navdisplay-column equals">=</div>
+                        <div class="navdisplay-column green-text">10 Kts NW</div>
+                    </div>
+                    <div class="navdisplay-row">
+                        <div class="navdisplay-column label">Pitch</div>
+                        <div class="navdisplay-column equals">=</div>
+                        <div class="navdisplay-column green-text">1&deg;</div>
+                    </div>
+                    <div class="navdisplay-row">
+                        <div class="navdisplay-column label">Roll</div>
+                        <div class="navdisplay-column equals">=</div>
+                        <div class="navdisplay-column green-text">1&deg;</div>
+                    </div>
+                    <div class="navdisplay-row">
+                        <div class="navdisplay-column label">Heave</div>
+                        <div class="navdisplay-column equals">=</div>
+                        <div class="navdisplay-column green-text">1&deg;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-grey">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="OSUWelPg.html">
+                        <img src="../Images/OSUVertLogoWhite.png" alt="logo">
+                    </a>
+                    <a href="https://www.linkedin.com/school/oregon-state-university/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/oregonstate/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/oregonstate/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/oregonstate" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/OregonStateUniv" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+
+                </div>
+                <div class="footer-company">
+                    <h4>Universty Info</h4>
+                    <ul>
+                        <li><a href="https://oregonstate.edu/">Oregon State Universty</a></li>
+                        <li><a href="https://ceoas.oregonstate.edu/ships">Ship Operations</a></li>
+                        <li><a href="https://ceoas.oregonstate.edu/research">Reaserch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-resources">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://ceoas.oregonstate.edu/news">Media Inquires</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="https://www.unols.org/">UNOLS</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:martech@coas.oregonstate.edu">martech@coas.oregonstate.edu</a></li>
+                        <li><span href="#">Main Lab Phone: 000</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="OSUWelPg.js"></script>
+</body>
+
+
+
+</html>
