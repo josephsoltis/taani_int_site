@@ -1,0 +1,365 @@
+:root {
+    --primary-color: #d23c0d;
+    --light-color: #fff;
+    --dark-color: #111;
+    --secondary-color: #d7d7d7;
+    --grey-color: #212529;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* overflow x hides vertical move bar */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Classes */
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-md {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* background set up */
+.background-image-long {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: #333;
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-grey {
+    background: var(--grey-color);
+    color: #fff;
+}
+
+/* text classes rem is fontsize realtive to root fontsize 16px in this case 2rem =32 */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-med {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* button CSS */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* margin top creates seperation */
+.btn-primary {
+    background: var(--primary-color);
+    color: black;
+    margin-top: 15px;
+}
+
+.btn-primary2 {
+    background: var(--primary-color);
+    color: rgba(255, 255, 255, 0.839);
+    margin-top: 15px;
+}
+
+.btn-light {
+    background: var(--light-color);
+    color: var(--primary-color);
+    margin-top: 15px;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+/* button goes all the way across */
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+    padding: 0px 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    font-size: 19px;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* last child targets last in that group */
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+/* team section */
+.team-section {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, max-height 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    max-height: 300px;
+    /* Initial height */
+}
+
+.team-member.expanded {
+    max-height: 700px;
+    /* Expanded height */
+    transform: translateY(-10px);
+}
+
+.team-photo-container {
+    position: relative;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.team-member.expanded .team-photo-container {
+    opacity: 1;
+    height: auto;
+}
+
+.team-photo {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.team-member.expanded .contact-info {
+    display: block;
+    margin-bottom: 0px;
+}
+
+.team-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.team-position {
+    font-size: 1.2em;
+    color: #777;
+    margin: 10px 0;
+}
+
+.team-description {
+    font-size: 1em;
+    color: #555;
+}
+
+.contact-info a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    /* Inherit color from parent button */
+    text-decoration: none;
+    /* Remove underline from link */
+    text-align: center;
+}
+
+
+/* Footer */
+.footer {
+    padding: 40px 40px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer ul li {
+    line-height: 2.5;
+}
+
+/* change any link in footer */
+.footer a {
+    color: #ccc;
+}
+
+.footer span {
+    color: #ccc;
+}
+
+/* any icon in footer */
+.footer i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 60%;
+    /* Ensures the image does not exceed the container width */
+    height: auto;
+    /* Allows the image to maintain its aspect ratio */
+}
+
+
+.footer-logo a:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
