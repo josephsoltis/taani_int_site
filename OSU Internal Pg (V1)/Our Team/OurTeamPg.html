@@ -49,7 +49,12 @@
                         <a href="../Live Cams/LiveCamPg.html">Live Cams</a>
                     </li>
                     <li>
-                        <a href="../Our Team/OurTeamPg.html">Our Team</a>
+                        <a href="../Our Team/OurTeamPg.html" class="dropdown-toggle">Our Team</a>
+                        <ul class="dropdown">
+                            <li><a href="#rv-taani-crew">R/V Taani Crew</a></li>
+                            <li><a href="#marine-technician-group">Marine Technician Group</a></li>
+                            <!-- Add more links as needed -->
+                        </ul>
                     </li>
 
                     <!-- hoem to our wiki posibly also defien what lab watch is and procedures for deployments, it things, could be an external link to another site with a login -->
@@ -68,107 +73,202 @@
         </div>
     </nav>
 
-    <section class="team-section">
+    <!-- our team section -->
+
+    <section class="team-section bg-primary">
         <div class="container">
-            <h2 class="section-title">Meet Our Team</h2>
-            <div class="team-grid">
-                <!-- Taani Crew Personnel -->
-                <div class="team-member">
-                    <h3 class="team-name">Brian Wehmeyer</h3>
-                    <p class="team-position">Master</p>
-                    <p class="team-description">Leads the R/V Taani crew and oversees vessel operations.</p>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Joseph Cop</h3>
-                    <p class="team-position">Chief Mate</p>
-                    <p class="team-description">Assists the Master and manages deck operations.</p>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Doug Beck</h3>
-                    <p class="team-position">Bos'n / Able Mariner</p>
-                    <p class="team-description">Supervises deck crew and maintenance tasks.</p>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Patrick Breshears</h3>
-                    <p class="team-position">Able Mariner</p>
-                    <p class="team-description">Handles deck operations and maintenance.</p>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Spencer Paul</h3>
-                    <p class="team-position">Chief Engineer</p>
-                    <p class="team-description">Oversees the engineering department and vessel machinery.</p>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Sugeng (Andi) Suwandi</h3>
-                    <p class="team-position">Chief Cook / Steward</p>
-                    <p class="team-description">Manages galley operations and crew meals.</p>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Theresa Wisner</h3>
-                    <p class="team-position">Chief Cook / Steward</p>
-                    <p class="team-description">Oversees food preparation and kitchen logistics.</p>
-                </div>
-                <!-- martech group -->
-                <!-- Marine Tech Group -->
-                <div class="team-member">
-
-                    <h3 class="team-name">Andrew Woogen</h3>
-                    <p class="team-position">Marine Technician Superintendent</p>
-                    <p class="team-description">Manages common use equipment, logistics, ship computing, shop services,
-                        and scientific support.</p>
-                    <div class="team-photo-container">
-                        <img src="..\Images\team photos\woogen_andrew_220x220.jpg" alt="Team Member Photo"
-                            class="team-photo">
-                        <button class="contact-info btn-block">
-                            <a href="mailto:andrew.woogen@oregonstate.edu">Email</a>
-                        </button>
+            <div class="tech-divider" id="rv-taani-crew">
+                <h2 class="text-center text-xl text-light">R/V Taani Crew</h2>
+                <p class="text-center text-med text-secondary">
+                    The RV Tanni Crew is responsible for the vessel’s operational integrity, supporting scientific
+                    expeditions, and managing maintenance and emergency procedures.
+                </p>
+                <div class="team-grid">
+                    <!-- Crew members -->
+                    <div class="team-member">
+                        <h3 class="text-med text-light">Brian Wehmeyer</h3>
+                        <p class="text-sm text-secondary">Captain</p>
+                        <p>###</p>
+                        <a href="mailto:brian.wehmeyer@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Brian Wehmeyer" class="email-logo">
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <h3 class="text-med text-light">Joseph Cop</h3>
+                        <p class="text-sm text-secondary">Chief Mate</p>
+                        <p>###</p>
+                        <a href="mailto:joseph.cop@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Joseph Cop" class="email-logo">
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <h3 class="text-med text-light">Doug Beck</h3>
+                        <p class="text-sm text-secondary">Bos'n / Able Mariner</p>
+                        <p>###</p>
+                        <a href="mailto:doug.beck@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Doug Beck" class="email-logo">
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <h3 class="text-med text-light">Patrick Breshears</h3>
+                        <p class="text-sm text-secondary">Able Mariner</p>
+                        <p>###</p>
+                        <a href="mailto:patrick.breshears@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Patrick Breshears" class="email-logo">
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <h3 class="text-med text-light">Spencer Paul</h3>
+                        <p class="text-sm text-secondary">Chief Engineer</p>
+                        <p>###</p>
+                        <a href="mailto:spencer.paul@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Spencer Paul" class="email-logo">
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <h3 class="text-med text-light">Sugeng (Andi) Suwandi</h3>
+                        <p class="text-sm text-secondary">Chief Cook / Steward</p>
+                        <p>###</p>
+                        <a href="mailto:sugeng.suwandi@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Sugeng (Andi) Suwandi" class="email-logo">
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <h3 class="text-med text-light">Theresa Wisner</h3>
+                        <p class="text-sm text-secondary">Chief Cook / Steward</p>
+                        <p>###</p>
+                        <a href="mailto:theresa.wisner@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Theresa Wisner" class="email-logo">
+                        </a>
                     </div>
                 </div>
-                <div class="team-member">
-                    <h3 class="team-name">Brandon D'Andrea</h3>
-                    <p class="team-position">Marine Technician</p>
-                    <p class="team-description">Responsible for shipboard and scientific electronics support.
-                    </p>
-                    <div class="team-photo-container">
-                        <img src="..\Images\team photos\dandrea_brandon_220x220.jpg" alt="Team Member Photo"
-                            class="team-photo">
-                        <button class="contact-info btn-block">
-                            <a href="mailto:brandon.dandrea@oregonstate.edu">Email</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Emily Shimada</h3>
-                    <p class="team-position">Marine Technician</p>
-                    <p class="team-description">Provides shipboard and scientific technical support.</p>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Tyler Peterson</h3>
-                    <p class="team-position">Marine Technician</p>
-                    <p class="team-description">Supports shipboard scientific operations and equipment.</p>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Samantha Christine Richards</h3>
-                    <p class="team-position">Marine Technician</p>
-                    <p class="team-description">Assists in scientific support and ship operations.</p>
-                </div>
+            </div>
 
-                <div class="team-member">
-                    <h3 class="team-name">Joseph Soltis</h3>
-                    <p class="team-position">Marine Technician</p>
-                    <p class="team-description">Handles shipboard and scientific electronics.</p>
-                </div>
-                <div class="team-member">
-                    <h3 class="team-name">Brandon Russell</h3>
-                    <p class="team-position">Marine Technician</p>
-                    <p class="team-description">Supports scientific operations and equipment logistics.</p>
+            <div class="tech-divider" id="marine-technician-group">
+                <h2 class="text-center text-xl text-light">Marine Technician Group</h2>
+                <p class="text-center text-med text-secondary">
+                    The Marine Technician Group manages common use equipment, logistics, ship computing, shop services,
+                    information storage, scientific support, shipboard/scientific electronics support, and
+                    communications.
+                </p>
+
+                <div class="team-grid">
+                    <!-- Andrew Woogen -->
+                    <div class="team-member">
+                        <a href="../Images/team photos/woogen_andrew_220x220.jpg" data-lightbox="team-photos">
+                            <img src="../Images/team photos/woogen_andrew_220x220.jpg" alt="Andrew Woogen"
+                                class="team-photo">
+                        </a>
+                        <h3 class="text-med text-light">Andrew Woogen</h3>
+                        <p class="text-sm text-secondary">Marine Technician Superintendent</p>
+                        <p class="text-light">541-737-4622 (office)</p>
+                        <a href="mailto:andrew.woogen@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Andrew Woogen" class="email-logo">
+                        </a>
+                    </div>
+
+                    <!-- Brandon D'Andrea -->
+                    <div class="team-member">
+                        <a href="../Images/team photos/dandrea_brandon_220x220.jpg" data-lightbox="team-photos">
+                            <img src="../Images/team photos/dandrea_brandon_220x220.jpg" alt="Brandon D'Andrea"
+                                class="team-photo">
+                        </a>
+                        <h3 class="text-med">Brandon D'Andrea</h3>
+                        <p class="text-sm">Marine Technician</p>
+                        <p>###</p>
+                        <a href="mailto:brandon.dandrea@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Brandon D'Andrea" class="email-logo">
+                        </a>
+                    </div>
+
+                    <!-- Tyler Peterson -->
+                    <div class="team-member">
+                        <a href="../Images/team photos/peterson-tyler.jpg" data-lightbox="team-photos">
+                            <img src="../Images/team photos/peterson-tyler.jpg" alt="Brandon D'Andrea"
+                                class="team-photo">
+                        </a>
+                        <h3 class="text-med">Tyler Peterson</h3>
+                        <p class="text-sm">Marine Technician</p>
+                        <p>###</p>
+                        <a href="mailto:tyler.peterson@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Tyler Peterson" class="email-logo">
+                        </a>
+                    </div>
+
+                    <!-- Samantha Christine Richards -->
+                    <div class="team-member">
+                        <a href="../Images/team photos/richards-samantha.jpg" data-lightbox="team-photos">
+                            <img src="../Images/team photos/richards-samantha.jpg" alt="Brandon D'Andrea"
+                                class="team-photo">
+                        </a>
+                        <h3 class="text-med">Samantha Richards</h3>
+                        <p class="text-sm">Marine Technician</p>
+                        <p>###</p>
+                        <a href="mailto:richars3@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Samantha Richards" class="email-logo">
+                        </a>
+                    </div>
+
+                    <!-- Brandon Russell -->
+                    <div class="team-member">
+                        <a href="../Images/team photos/profile-default.png" data-lightbox="team-photos">
+                            <img src="../Images/team photos/profile-default.png" alt="Brandon D'Andrea"
+                                class="team-photo">
+                        </a>
+                        <h3 class="text-med">Brandon Russell</h3>
+                        <p class="text-sm">Marine Technician</p>
+                        <p>###</p>
+                        <a href="mailto:russebra@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Brandon Russell" class="email-logo">
+                        </a>
+                    </div>
+
+                    <!-- Emily Shimada -->
+                    <div class="team-member">
+                        <a href="../Images/team photos/shimada-emily.jpg" data-lightbox="team-photos">
+                            <img src="../Images/team photos/shimada-emily.jpg" alt="Brandon D'Andrea"
+                                class="team-photo">
+                        </a>
+                        <h3 class="text-med">Emily Shimada</h3>
+                        <p class="text-sm">Marine Technician</p>
+                        <p>###</p>
+                        <a href="mailto:emily.shimada@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Emily Shimada" class="email-logo">
+                        </a>
+                    </div>
+
+                    <!-- Joseph Soltis -->
+                    <div class="team-member">
+                        <a href="../Images/team photos/profile-default.png" data-lightbox="team-photos">
+                            <img src="../Images/team photos/profile-default.png" alt="Brandon D'Andrea"
+                                class="team-photo">
+                        </a>
+                        <h3 class="text-med">Joseph Soltis</h3>
+                        <p class="text-sm">Marine Technician</p>
+                        <p>###</p>
+                        <a href="mailto:soltisj@oregonstate.edu">
+                            <img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"
+                                alt="Email Joseph Soltis" class="email-logo">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-
-
-
 
 
 

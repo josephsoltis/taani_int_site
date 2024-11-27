@@ -1,13 +1,9 @@
-// team meber photo js/
-
-document.addEventListener('DOMContentLoaded', () => {
-    const teamMembers = document.querySelectorAll('.team-member');
-
-    teamMembers.forEach(member => {
-        member.addEventListener('click', () => {
-            const expanded = member.getAttribute('data-expanded') === 'true';
-            member.setAttribute('data-expanded', !expanded);
-            member.classList.toggle('expanded', !expanded);
-        });
+$(document).ready(function () {
+    $('.dropdown a').on('click', function (event) {
+        event.preventDefault();
+        var target = $(this.hash);
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 500);
     });
 });

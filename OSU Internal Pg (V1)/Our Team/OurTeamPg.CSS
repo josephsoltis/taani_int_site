@@ -93,7 +93,7 @@ ul {
     font-size: 2.2rem;
     line-height: 1.4;
     font-weight: normal;
-    margin: 40px 0 20px;
+    margin: 10px 0 20px;
 }
 
 .text-lg {
@@ -207,109 +207,128 @@ ul {
 
 /* last child targets last in that group */
 .navbar ul li:last-child a {
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .navbar ul li a i {
     margin-right: 10px;
 }
 
-/* team section */
-.team-section {
-    background-color: var(--primary-color);
-    padding: 50px 0;
-    width: 100%;
+.navbar ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    /* dark background color */
+    border: 1px solid #666;
+    /* border */
+    border-radius: 5px;
+    /* border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* box shadow */
 }
 
-.section-title {
-    text-align: center;
-    font-size: 3em;
-    margin-bottom: 50px;
+.navbar ul li:hover ul.dropdown {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    /* smooth transition */
+}
+
+.navbar ul li ul.dropdown li {
+    display: block;
+    /* consistent padding */
+}
+
+.navbar ul li ul.dropdown li a {
+    font-family: Arial, sans-serif;
+    /* consistent font */
+    font-size: 16px;
+    /* consistent font size */
     color: #fff;
+    /* light text color */
+    text-decoration: none;
+}
+
+.navbar ul li ul.dropdown li a:hover {
+    background-color: #666;
+    /* hover background color */
+    color: #fff;
+    /* hover text color */
+}
+
+/* our-team section */
+
+.team-section {
+    padding: 10px;
+
+}
+
+.tech-divider {
+    margin-top: 20px;
+    background-color: var(--grey-color);
+    border-radius: 50px;
+    padding: 20px;
+    border: 15px solid var(--secondary-color);
+    box-shadow: 0 0 0 5px var(--secondary-color);
+    margin-bottom: 30px;
 }
 
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    margin-top: 30px;
 }
 
 .team-member {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
-    transition: transform 0.3s, max-height 0.3s;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    max-height: 300px;
-    /* Initial height */
+    border: 1px solid var(--grey-color);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: var(--light-color);
 }
 
-.team-member.expanded {
-    max-height: 700px;
-    /* Expanded height */
-    transform: translateY(-10px);
-}
-
-.team-photo-container {
-    position: relative;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
-}
-
-.team-member.expanded .team-photo-container {
-    opacity: 1;
-    height: auto;
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .team-photo {
-    margin-top: 20px;
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    transition: opacity 0.3s ease-in-out;
+    margin-bottom: 15px;
+    object-fit: cover;
 }
 
-.contact-info {
-    margin-top: 20px;
-}
-
-.team-member.expanded .contact-info {
-    display: block;
-    margin-bottom: 0px;
-}
-
-.team-name {
-    font-size: 1.5em;
+.team-member h3 {
     margin: 10px 0;
+    color: var(--dark-color);
 }
 
-.team-position {
-    font-size: 1.2em;
-    color: #777;
-    margin: 10px 0;
+.team-member p {
+    margin-bottom: 10px;
+    color: var(--grey-color);
+    word-break: break-word;
+    /* Breaks long words to fit within the container */
+    overflow-wrap: anywhere;
+    /* Ensures text breaks to a new line if necessary */
 }
 
-.team-description {
-    font-size: 1em;
-    color: #555;
+/* Styling the email logo */
+.email-logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    transition: transform 0.3s;
 }
 
-.contact-info a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: inherit;
-    /* Inherit color from parent button */
-    text-decoration: none;
-    /* Remove underline from link */
-    text-align: center;
+.email-logo:hover {
+    transform: scale(1.1);
 }
+
+
+
 
 
 /* Footer */
