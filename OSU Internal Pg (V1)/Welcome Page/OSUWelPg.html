@@ -45,26 +45,36 @@
                     <!-- main menu, navigation bar li is link will have to make a seperate .html for each page last is a button -->
                     <li>
                         <a href="OSUWelPg.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="#welcome-vid">Welcome Video</a>
+                            <li><a href="#navigation-ship">Ship Navigation</a></li>
                     </li>
-                    <li>
-                        <a href="https://coriolix.sikuliaq.alaska.edu/">Coriolix</a>
-                    </li>
-                    <li>
-                        <a href="../Live Cams/LiveCamPg.html">Live Cams</a>
-                    </li>
-                    <li>
-                        <a href="../Our Team/OurTeamPg.html">Our Team</a>
-                    </li>
+                </ul>
+                </li>
+                <li>
+                    <a href="https://coriolix.sikuliaq.alaska.edu/">Coriolix</a>
+                </li>
+                <li>
+                    <a href="../Live Cams/LiveCamPg.html">Live Cams</a>
+                </li>
+                <li>
+                    <a href="../Our Team/OurTeamPg.html">Our Team</a>
+                    <ul class="dropdown">
+                        <li><a href="../Our Team/OurTeamPg.html#rv-taani-crew">R/V Taani Crew</a></li>
+                        <li><a href="../Our Team/OurTeamPg.html#marine-technician-group">Marine Technician Group</a>
+                        </li>
+                    </ul>
+                </li>
 
-                    <!-- hoem to our wiki posibly also defien what lab watch is and procedures for deployments, it things, could be an external link to another site with a login -->
-                    <li>
-                        <a href="#">Ship Info</a>
-                    </li>
-                    <!-- drop down to each section of page include ship map, food, safety, shared drives  -->
-                    <!-- phpne list, unanoymus complaint field of some kind, internal safety mangament documents  -->
-                    <li class="search-container">
-                        search here
-                    </li>
+                <!-- hoem to our wiki posibly also defien what lab watch is and procedures for deployments, it things, could be an external link to another site with a login -->
+                <li>
+                    <a href="#">Ship Info</a>
+                </li>
+                <!-- drop down to each section of page include ship map, food, safety, shared drives  -->
+                <!-- phpne list, unanoymus complaint field of some kind, internal safety mangament documents  -->
+                <li class="search-container">
+                    search here
+                </li>
                 </ul>
             </div>
 
@@ -74,24 +84,58 @@
 
 
     <!-- hero section -->
-    <div class="hero">
-        <div class="hero-image" style="background-image: url(../Images/taani_float_temp_image.jpg);">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-heading text-xxl">
-                        Welcome Aboard the R/V Taani
-                    </h1>
-                    <p class="hero-text">
-                        As a new member of the ship, you are required to review the applicable information.
-                    </p>
+    <section class="ship-image">
+        <div class="hero">
+            <div class="hero-image" style="background-image: url(../Images/taani_float_temp_image.jpg);">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-heading text-xxl">
+                            Welcome Aboard the R/V Taani
+                        </h1>
+                        <p class="hero-text">
+                            As a new member of the ship, you are required to review the applicable information below.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <!-- Naviagtion Section, ex. live feed of boat on map and two littel squares with ship heading and live feed of other ship nav like PRH, Temp, Speed -->
-    <section class="navigation">
+    <!-- Welcome Video Section -->
+    <section class="welcome-video-section" id="welcome-vid">
+        <div class="content-container">
+            <!-- Text Section -->
+            <div class="text-content">
+                <h2>Your Journey Starts Here</h2>
+                <p>
+                    Watch this video to learn about our ship, safety guidelines, and what to expect during your time
+                    with us.
+                </p>
+                <p>
+                    Our goal is to ensure your time aboard is safe, productive, and enjoyable. Please reach out to the
+                    crew if you
+                    have any questions or need assistance.
+                </p>
+            </div>
+            <!-- Video Section -->
+            <div class="video-content">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_LINK" title="Welcome Aboard Video"
+                        frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Naviagtion Section, ex. live feed of boat on map and two littel squares with ship heading and
+                    live feed of other ship nav like PRH, Temp, Speed -->
+    <section class="navigation-ship" id="navigation-ship">
         <div class="navi-grid bg-secondary">
             <!-- Left column: Livemap Image -->
             <div class="navi-grid-item">
