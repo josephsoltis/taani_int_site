@@ -285,7 +285,7 @@ ul {
 
 .team-member {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid var(--grey-color);
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
