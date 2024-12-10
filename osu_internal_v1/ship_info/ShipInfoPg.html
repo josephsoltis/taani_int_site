@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Team | Oregon State Universty </title>
+
+    <!-- everything linked below is to fonts from google fonts to be used later -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="ShipInfoPg.CSS" />
+    <!--to create favicon on site make sure image is saved in file that in html of project, href is link to folder location then type defines an icon   -->
+    <link rel="shortcut icon" href="../Images/OSUfaviconlogo.png" type="image/x-icon" />
+
+</head>
+
+<body>
+    <!-- navagation -->
+    <nav class="navbar">
+        <div class="container bg-light">
+            <!-- div for logo -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../Images/OSUVertLogoBlack.png" alt="logo" width="300px" height="100px" />
+                </a>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <!-- main menu, navigation bar li is link will have to make a seperate .html for each page last is a button -->
+                    <li>
+                        <a href="../index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="../index.html#welcome-vid">Welcome Video</a>
+                            <li><a href="../index.html#navigation-ship">Ship Navigation</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://coriolix.taani.oregonstate.edu/">Coriolix</a>
+                    </li>
+                    <li>
+                        <a href="../live_cams/LiveCamPg.html">Live Cams</a>
+                    </li>
+                    <li>
+                        <a href="../our_team/OurTeamPg.html" class="dropdown-toggle">Our Team</a>
+                        <ul class="dropdown">
+                            <li><a href="../our_team/OurTeamPg.html#rv-taani-crew">R/V Taani Crew</a></li>
+                            <li><a href="../our_team/OurTeamPg.html#marine-technician-group">Marine Technician Group</a>
+                            </li>
+                            <!-- Add more links as needed -->
+                        </ul>
+                    </li>
+
+                    <!-- hoem to our wiki posibly also defien what lab watch is and procedures for deployments, it things, could be an external link to another site with a login -->
+                    <li>
+                        <a href="../ship_info/ShipInfoPg.html">Ship Info</a>
+                    </li>
+                    <!-- drop down to each section of page include ship map, food, safety, shared drives  -->
+                    <!-- phpne list, unanoymus complaint field of some kind, internal safety mangament documents  -->
+                    <li class="search-container">
+                        search here
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- footer section -->
+    <footer class="footer bg-grey">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="/index.html">
+                        <img src="../Images/OSUVertLogoWhite.png" alt="logo">
+                    </a>
+                    <a href="https://www.linkedin.com/school/oregon-state-university/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/oregonstate/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/oregonstate/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/oregonstate" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/OregonStateUniv" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+
+                </div>
+                <div class="footer-company">
+                    <h4>Universty Info</h4>
+                    <ul>
+                        <li><a href="https://oregonstate.edu/">Oregon State Universty</a></li>
+                        <li><a href="https://ceoas.oregonstate.edu/ships">Ship Operations</a></li>
+                        <li><a href="https://ceoas.oregonstate.edu/research">Reaserch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-resources">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://ceoas.oregonstate.edu/news">Media Inquires</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="https://www.unols.org/">UNOLS</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:martech@coas.oregonstate.edu">martech@coas.oregonstate.edu</a></li>
+                        <li><span href="#">Main Lab Phone: 000</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ShipInfoPg.js"></script>
+</body>
+
+</html>
