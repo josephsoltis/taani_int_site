@@ -345,7 +345,7 @@ ul {
 /* Slider Container */
 .slider-container {
     position: relative;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
@@ -371,16 +371,20 @@ ul {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    align-items: center;
+    /* Centers the arrow vertically */
+    justify-content: center;
+    /* Centers the arrow horizontally */
     background: rgba(0, 0, 0, 0.6);
-    background-position: center;
     color: #fff;
     border: none;
     font-size: 2rem;
-    padding: 10px 10px;
     cursor: pointer;
     z-index: 10;
     border-radius: 5px;
     transition: background 0.3s;
+    padding: 10px;
+    padding-bottom: 13px;
 }
 
 .slider-btn:hover {
@@ -467,6 +471,97 @@ ul {
 }
 
 
+/* Phone List Section */
+.phone-list-section {
+    padding: 30px 100px;
+    background: var(--light-color);
+    background-color: #f8f9fa;
+    /* Light grey for a professional look */
+    border-top: 4px solid var(--primary-color);
+    /* Accent border */
+    border-bottom: 4px solid var(--primary-color);
+    margin-top: -20px;
+    position: relative;
+}
+
+.phone-list {
+    background-color: var(--light-color);
+    /* Light grey background for distinction */
+    padding: 20px;
+    /* Add padding for spacing */
+    margin: 20px auto;
+    /* Center the section with auto margin */
+    border: 2px solid var(--primary-color);
+    /* Accent border */
+    border-radius: 8px;
+    /* Rounded corners */
+    max-width: 600px;
+    /* Constrain width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.phone-list h2 {
+    font-size: 2rem;
+    /* Larger font for the title */
+    margin-bottom: 10px;
+    /* Spacing below the heading */
+    color: var(--primary-color);
+    /* Use primary color for heading */
+    text-align: center;
+    /* Center align the heading */
+}
+
+.phone-list p {
+    font-size: 1rem;
+    /* Standard text size */
+    line-height: 1.5;
+    /* Improve readability */
+    margin-bottom: 15px;
+    /* Space below paragraphs */
+    color: #333;
+    /* Dark grey text for readability */
+    text-align: center;
+    /* Center-align text for uniformity */
+}
+
+.phone-list ul {
+    list-style: none;
+    padding: 0;
+    overflow-y: scroll;
+    max-height: 300px;
+    /* Set a max height for the scrollable area */
+    scrollbar-width: 10px;
+    /* Cross-browser scrollbar width adjustment */
+    scrollbar-color: var(--primary-color) var(--light-color);
+    /* Scrollbar color */
+}
+
+.phone-list li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+
+.phone-list li strong {
+    color: #555;
+    /* Slightly darker text for location names */
+}
+
+.phone-list li span {
+    font-weight: bold;
+    /* Emphasize extensions */
+    color: var(--primary-color);
+    /* Use primary color for extensions */
+}
 
 
 
