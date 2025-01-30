@@ -424,36 +424,34 @@ ul {
     flex-direction: column;
     justify-content: center;
     max-height: 300px;
-    /* Adjust as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navdisplay-row {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    margin: 2px 60px;
-    /* Add margin for spacing between rows */
-    padding: 2px;
+    margin: 1px 50px;
+    padding: 1px;
+    margin-bottom: 8px;
 }
 
 .equals {
     font-size: 2em;
-    /* Increase font size for equals symbol */
     text-align: center;
 }
 
 .label {
     text-align: left;
     font-size: 1.5em;
-    /* Increase font size for labels */
+    font-weight: bold;
 }
 
 .green-text {
     color: #00ff00;
     text-align: right;
-    /* Align numbers to the right */
     font-size: 1.5em;
-    /* Increase font size for numbers */
+    font-weight: bold;
 }
 
 
