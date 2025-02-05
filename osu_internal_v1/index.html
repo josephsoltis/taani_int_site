@@ -23,7 +23,10 @@
     <link rel="stylesheet" href="OSUWelPg.css" />
     <!--to create favicon on site make sure image is saved in file that in html of project, href is link to folder location then type defines an icon   -->
     <link rel="shortcut icon" href="./Images/OSUfaviconlogo.png" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
 
+    <script type="module" src="gauges/E_NavGauge.js"></script>
+    <script type="module" src="gauges/E_BaseGauge.js"></script>
 
 </head>
 
@@ -147,7 +150,24 @@
 
             <!-- Right column: Small Image and Nav Display Box -->
             <div class="navi-grid-item right-column">
-                <img src="./Images/haeadng card image stand in.png" alt="Heading Card Image" class="small-image">
+                <div id="HeadingGauge" style="width: 100%; height: 100%;">
+                    <script type="module">
+                        import { NavGauge } from './gauges/E_NavGauge.js';
+                        const headingGauge = new NavGauge({
+                            type: "Nav",
+                            containerId: "HeadingGauge",
+                            dataId: 18,
+                            title: "Vessel Heading",
+                            subtitle: "Heading",
+                            subtitle_units: "degrees_true",
+                            min: 0,
+                            max: 360,
+                            startAngle: 90,
+                            endAngle: -270,
+                            color: [[1, "#999"]],
+                        });
+                    </script>
+                </div>
                 <div class="navdisplay-box">
                     <div class="navdisplay-row">
                         <div class="navdisplay-column label">Temp</div>
