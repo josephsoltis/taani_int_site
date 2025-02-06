@@ -27,15 +27,16 @@ async function getData(targetID) {
 
 // Function to update the DOM with live data
 async function updateLiveData() {
-    const temp = await getData(1); // Replace 1 with the correct ID for temperature
-    const wind = await getData(2); // Replace 2 with the correct ID for wind
+    const temp = await getData(3854); // correct ID for temperature
+    const wind = await getData(2833); // correct ID for wind
     const pitch = await getData(3); // Replace 3 with the correct ID for pitch
     const roll = await getData(4); // Replace 4 with the correct ID for roll
     const heave = await getData(5); // Replace 5 with the correct ID for heave
+    /* need to have lat and long values */
 
     // Update the DOM elements
     document.getElementById("temp").textContent = temp !== null ? `${temp}°C` : "N/A";
-    document.getElementById("wind").textContent = wind !== null ? `${wind} Kts NW` : "N/A";
+    document.getElementById("wind").textContent = wind !== null ? `${wind} m/s NW` : "N/A";/* need to figure out wind direction */
     document.getElementById("pitch").textContent = pitch !== null ? `${pitch}°` : "N/A";
     document.getElementById("roll").textContent = roll !== null ? `${roll}°` : "N/A";
     document.getElementById("heave").textContent = heave !== null ? `${heave}°` : "N/A";
