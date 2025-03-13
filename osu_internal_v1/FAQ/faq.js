@@ -2,8 +2,8 @@
 const faqs = [
     { id: 1, category: 'general', question: 'What is the research vessel?', answer: 'The research vessel is designed for ocean research.' },
     { id: 2, category: 'safety', question: 'What safety procedures are followed?', answer: 'We follow strict safety protocols for all operations.' },
-    { id: 3, category: 'operations', question: 'How are operations coordinated?', answer: 'Operations are coordinated with the onboard team and shore support.' },
-    { id: 4, category: 'technical', question: 'How does the technical equipment work?', answer: 'The equipment is calibrated and tested regularly.' },
+    { id: 3, category: 'crew', question: 'How are operations coordinated?', answer: 'Operations are coordinated with the onboard team and shore support.' },
+    { id: 4, category: 'science', question: 'How does the technical equipment work?', answer: 'The equipment is calibrated and tested regularly.' },
     // Add more FAQs...
 ];
 
