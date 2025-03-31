@@ -297,6 +297,7 @@ ul {
 .safety-docs h2 {
     font-weight: 700;
     margin-bottom: 15px;
+    border-bottom: 2px var(--grey-color) solid;
 }
 
 .safety-docs p {
