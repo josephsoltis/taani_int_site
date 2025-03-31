@@ -64,6 +64,7 @@
                         <ul class="dropdown">
                             <li><a href="../network_resources/network_resourcesPg.html#internet-access">Internet
                                     Access</a>
+                            <li><a href="../network_resources/network_resourcesPg.html#file-shares">File Sharing</a>
                             <li>
                                 <!-- Add more links as needed -->
                         </ul>
@@ -93,48 +94,133 @@
     </div>
 
     <section id="internet-access">
-        <h2 class="text-xl">Internet Access</h2>
-        <p>First, connect to the <strong>"xxx"</strong> WiFi network. The password is posted in the Main Lab and
-            Computer Lab.</p>
+        <div class="container">
+            <h2 class="text-xl">Internet Access</h2>
+            <p>First, connect to the <strong>"xxx"</strong> WiFi network. The password is posted in the Main Lab and
+                Computer Lab.</p>
 
-        <p>A login page should appear. If it does not, use the links below:</p>
+            <p>A login page should appear. If it does not, use the links below:</p>
 
-        <ul>
-            <li><a href="http://example-login-url.com" target="_blank">Taani Login Page</a></li>
-            <li><a href="http://example-logout-url.com" target="_blank">Taani Logout Page</a></li>
-        </ul>
+            <ul>
+                <li><a href="http://example-login-url.com" target="_blank">Taani Login Page</a></li>
+                <li><a href="http://example-logout-url.com" target="_blank">Taani Logout Page</a></li>
+            </ul>
 
-        <p>You should have received an email from <a href="mailto:xx@oregonstate.edu">xxx@oregonstate.edu</a>
-            with your login
-            credentials.</p>
+            <p>You should have received an email from <a href="mailto:xx@oregonstate.edu">xxx@oregonstate.edu</a>
+                with your login
+                credentials.</p>
 
-        <p><strong>Tip:</strong> Turn on <em>Low Data Mode</em> to conserve bandwidth.</p>
+            <p><strong>Tip:</strong> Turn on <em>Low Data Mode</em> to conserve bandwidth.</p>
 
-        <h3 class="text-lg">Troubleshooting</h3>
+            <div class="troubleshooting">
+                <h3 class="text-lg">Troubleshooting</h3>
 
-        <details>
-            <summary>Frequent Login Issues (Private/Randomized WiFi Address)</summary>
-            <p><strong>iPhone:</strong></p>
-            <ol>
-                <li>Go to <strong>Settings</strong> > <strong>Wi-Fi</strong>.</li>
-                <li>Tap the info (<i class="fa fa-info-circle"></i>) button next to ShipWide.</li>
-                <li>Turn off <strong>Private Address</strong>.</li>
-                <li>Restart WiFi.</li>
-            </ol>
+                <details>
+                    <summary>Frequent Login Issues (Private/Randomized WiFi Address)</summary>
+                    <p><strong>iPhone:</strong></p>
+                    <ol>
+                        <li>Go to <strong>Settings</strong> > <strong>Wi-Fi</strong>.</li>
+                        <li>Tap the info (<i class="fa fa-info-circle"></i>) button next to ShipWide.</li>
+                        <li>Turn off <strong>Private Address</strong>.</li>
+                        <li>Restart WiFi.</li>
+                    </ol>
 
-            <p><strong>Android:</strong></p>
-            <ol>
-                <li>Go to <strong>Settings</strong> > <strong>Connections</strong> > <strong>Wi-Fi</strong>.</li>
-                <li>Tap the gear icon next to ShipWide.</li>
-                <li>Tap <strong>View More</strong> > <strong>MAC Address Type.</strong>.</li>
-                <li>Select <strong>Phone MAC</strong> to change the MAC address type from Randomized MAC to Phone
-                    MAC..
-                </li>
-                <li>Restart WiFi.</li>
-            </ol>
+                    <p><strong>Android:</strong></p>
+                    <ol>
+                        <li>Go to <strong>Settings</strong> > <strong>Connections</strong> > <strong>Wi-Fi</strong>.
+                        </li>
+                        <li>Tap the gear icon next to ShipWide.</li>
+                        <li>Tap <strong>View More</strong> > <strong>MAC Address Type.</strong>.</li>
+                        <li>Select <strong>Phone MAC</strong> to change the MAC address type from Randomized MAC to
+                            Phone
+                            MAC..
+                        </li>
+                        <li>Restart WiFi.</li>
+                    </ol>
 
-            <p><strong>Tip:</strong> When you leave the ship, its best to switch back to Private/Randomized MAC.</p>
-        </details>
+                    <p><strong>Tip:</strong> When you leave the ship, its best to switch back to Private/Randomized MAC.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="file-shares">
+        <div class="container">
+            <h2 class="text-xl">Taani File Sharing</h2>
+            <p>Taani has local file shares</p>
+            <table>
+                <tr>
+                    <th>Share</th>
+                    <th>Location</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>\\files\Ops</td>
+                    <td>crew files</td>
+                </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>\\files\Scans</td>
+                    <td>Scans from onboard printers</td>
+                </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>\\files\Science</td>
+                    <td>Science Party shared purposes</td>
+                </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>\\files\Tech</td>
+                    <td>Internal Science Support Tech</td>
+                </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>\\data\cruisedata</td>
+                    <td>Read-only underway data</td>
+                </tr>
+            </table>
+
+            <div class="instructions">
+                <h3>Mapping a Shared Drive</h3>
+                <p>Use your username and password to map a shared drive. If you lack access, contact <a
+                        href="mailto:uaf-skq-science-support@alaska.edu">science support</a>.</p>
+            </div>
+
+            <div class="instructions">
+                <h3>Folder Structure</h3>
+                <ul>
+                    <li><strong>s2s</strong> - Files synchronized between Ship and Shore.</li>
+                    <li><strong>shipside</strong> - Files stored only on board.</li>
+                    <li><strong>temp</strong> - Temporary files.</li>
+                </ul>
+            </div>
+
+            <div class="instructions">
+                <h3>Connecting Windows Clients</h3>
+                <ol>
+                    <li>Right-click <strong>This PC</strong> in File Explorer, then select <strong>Map network
+                            drive</strong>.</li>
+                    <li>Select a drive letter and enter a location from the table above.</li>
+                    <li>Check "Reconnect at sign-in" and "Connect using different credentials".</li>
+                    <li>For <strong>Openvdm</strong>, use username "guest" (no password).</li>
+                    <li>For other shares, use "username" and enter your password.</li>
+                    <li>Check "Remember my credentials".</li>
+                </ol>
+            </div>
+
+            <div class="instructions">
+                <h3>Connecting Mac Clients</h3>
+                <ol>
+                    <li>In Finder, select <strong>Go</strong> → <strong>Connect to Server</strong>.</li>
+                    <li>Enter the server address (e.g., <code>smb://files/science</code>).</li>
+                    <li>Click <strong>+</strong> to save to favorites.</li>
+                    <li>Select "Registered User" and enter credentials as <strong>username</strong> or "guest".</li>
+                    <li>Check "Remember this password in my keychain".</li>
+                </ol>
+            </div>
+        </div>
     </section>
 
 
