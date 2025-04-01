@@ -96,24 +96,26 @@
     <section id="internet-access">
         <div class="container">
             <h2 class="text-xl">Internet Access</h2>
-            <p>First, connect to the <strong>"xxx"</strong> WiFi network. The password is posted in the Main Lab and
-                Computer Lab.</p>
+            <div class="connecting">
+                <p>First, connect to the <strong>"xxx"</strong> WiFi network. The password is posted in the Main Lab and
+                    Computer Lab.</p>
 
-            <p>A login page should appear. If it does not, use the links below:</p>
+                <p>A login page should appear. If it does not, use the links below:</p>
 
-            <ul>
-                <li><a href="http://example-login-url.com" target="_blank">Taani Login Page</a></li>
-                <li><a href="http://example-logout-url.com" target="_blank">Taani Logout Page</a></li>
-            </ul>
+                <ul>
+                    <li><a href="http://example-login-url.com" target="_blank">Taani Login Page</a></li>
+                    <li><a href="http://example-logout-url.com" target="_blank">Taani Logout Page</a></li>
+                </ul>
 
-            <p>You should have received an email from <a href="mailto:xx@oregonstate.edu">xxx@oregonstate.edu</a>
-                with your login
-                credentials.</p>
+                <p>You should have received an email from <a href="mailto:xx@oregonstate.edu">xxx@oregonstate.edu</a>
+                    with your login
+                    credentials.</p>
 
-            <p><strong>Tip:</strong> Turn on <em>Low Data Mode</em> to conserve bandwidth.</p>
+                <p><strong>Tip:</strong> Turn on <em>Low Data Mode</em> to conserve bandwidth.</p>
+            </div>
 
             <div class="troubleshooting">
-                <h3 class="text-lg">Troubleshooting</h3>
+                <h3>Troubleshooting</h3>
 
                 <details>
                     <summary>Frequent Login Issues (Private/Randomized WiFi Address)</summary>
@@ -148,7 +150,7 @@
     <section id="file-shares">
         <div class="container">
             <h2 class="text-xl">Taani File Sharing</h2>
-            <p>Taani has local file shares</p>
+            <p>Taani has local file shares:</p>
             <table>
                 <tr>
                     <th>Share</th>
@@ -197,31 +199,166 @@
                 </ul>
             </div>
 
-            <div class="instructions">
-                <h3>Connecting Windows Clients</h3>
-                <ol>
-                    <li>Right-click <strong>This PC</strong> in File Explorer, then select <strong>Map network
-                            drive</strong>.</li>
-                    <li>Select a drive letter and enter a location from the table above.</li>
-                    <li>Check "Reconnect at sign-in" and "Connect using different credentials".</li>
-                    <li>For <strong>Openvdm</strong>, use username "guest" (no password).</li>
-                    <li>For other shares, use "username" and enter your password.</li>
-                    <li>Check "Remember my credentials".</li>
-                </ol>
+            <div class="troubleshooting">
+                <h3>Connection Instructions</h3>
+
+                <details>
+                    <summary>Connecting Windows Clients</summary>
+                    <ol>
+                        <li>Right-click <strong>This PC</strong> in File Explorer, then select <strong>Map network
+                                drive</strong>.</li>
+                        <li>Select a drive letter and enter a location from the table above.</li>
+                        <li>Check "Reconnect at sign-in" and "Connect using different credentials".</li>
+                        <li>For <strong>OpenVDM</strong>, use username <strong>"guest"</strong> (no password).</li>
+                        <li>For other shares, use <strong>"username"</strong> and enter your password.</li>
+                        <li>Check "Remember my credentials".</li>
+                    </ol>
+                </details>
+
+                <details>
+                    <summary>Connecting Mac Clients</summary>
+                    <ol>
+                        <li>In Finder, select <strong>Go</strong> → <strong>Connect to Server</strong>.</li>
+                        <li>Enter the server address (e.g., <code>smb://files/science</code>).</li>
+                        <li>Click <strong>+</strong> to save to favorites.</li>
+                        <li>Select "Registered User" and enter credentials as <strong>username</strong> or "guest".</li>
+                        <li>Check "Remember this password in my keychain".</li>
+                    </ol>
+                </details>
             </div>
 
-            <div class="instructions">
-                <h3>Connecting Mac Clients</h3>
-                <ol>
-                    <li>In Finder, select <strong>Go</strong> → <strong>Connect to Server</strong>.</li>
-                    <li>Enter the server address (e.g., <code>smb://files/science</code>).</li>
-                    <li>Click <strong>+</strong> to save to favorites.</li>
-                    <li>Select "Registered User" and enter credentials as <strong>username</strong> or "guest".</li>
-                    <li>Check "Remember this password in my keychain".</li>
-                </ol>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="printing-scanning" id="printing-scanning">
+        <div class="container">
+            <h2 class="text-xl">Printing and Scanning Services</h2>
+            <p>All models can print double-sided.</p>
+
+            <h3>Black and White Printers (Kyocera ECOSYS PA4500x)</h3>
+            <table class="printer-table">
+                <tr>
+                    <th>Host/Printer Name</th>
+                    <th>Location</th>
+                    <th>IP Address / Web UI</th>
+                </tr>
+                <tr>
+                    <td>printer-bw-mainlab</td>
+                    <td>Main Lab-Fwd</td>
+                    <td>10.1.0.37</td>
+                </tr>
+            </table>
+
+            <h3>Color Printer, Scanner, and Copier (Kyocera Eco Sys M6630cidn)</h3>
+            <table class="printer-table">
+                <tr>
+                    <th>Host/Printer Name</th>
+                    <th>Location</th>
+                    <th>IP Address / Web UI</th>
+                </tr>
+                <tr>
+                    <td>printer-color-ecr</td>
+                    <td>Engineer Control Room</td>
+                    <td>10.1.0.45</td>
+                </tr>
+                <tr>
+                    <td>printer-color-lounge</td>
+                    <td>Lounge</td>
+                    <td>10.1.0.41</td>
+                </tr>
+                <tr>
+                    <td>printer-color-upperlab</td>
+                    <td>03 Upper Lab</td>
+                    <td>10.1.0.46</td>
+                </tr>
+                <tr>
+                    <td>printer-color-bridge</td>
+                    <td>Bridge</td>
+                    <td>10.1.0.44</td>
+                </tr>
+            </table>
+
+            <h3>Kyocera ECOSYS MA4000cix</h3>
+            <table class="printer-table">
+                <tr>
+                    <th>Host/Printer Name</th>
+                    <th>Location</th>
+                    <th>IP Address / Web UI</th>
+                </tr>
+                <tr>
+                    <td>printer-color-computerlab</td>
+                    <td>Computer Lab</td>
+                    <td>10.1.0.42</td>
+                </tr>
+            </table>
+
+            <div class="troubleshooting">
+                <h3>Additional Info</h3>
+                <details>
+                    <summary>Connecting to a Printer</summary>
+                    <h4>Windows</h4>
+                    <p>If you are on a domain computer, add a printer by going to <strong>\\shp-file-1\</strong> in File
+                        Explorer.</p>
+                    <p>If using a personal device, manually add a printer using the IP addresses above. For full
+                        functionality, install the printer driver from <strong>\\files\scans\Printer Drivers</strong>.
+                    </p>
+
+                    <h4>Mac</h4>
+                    <p>Try adding a printer using its IP address. If that doesn’t work, follow instructions <a
+                            href="#">here</a>.</p>
+
+                    <h4>Linux</h4>
+                    <p>Follow instructions <a href="#">here</a>.</p>
+
+                    <h4>Mobile Devices</h4>
+                    <p>Download the <strong>Kyocera Print</strong> app for iOS and Android.</p>
+                    <ul>
+                        <li><a href="#">Apple iOS Download</a></li>
+                        <li><a href="#">Android OS Download</a></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Scanning Documents</summary>
+                    <p>Scan documents using the Color Printer in the Computer Lab.</p>
+                    <ol>
+                        <li>Wake printer with the "Start" button or tap touch screen.</li>
+                        <li>Select "Send" on the touch screen.</li>
+                        <li>Choose "Address Book" → "Scan" → "OK".</li>
+                        <li>Place document in feeder & press "Start".</li>
+                        <li>Download your scanned document <a href="https://web.sikuliaq.alaska.edu/scans/"
+                                target="_blank">here</a>.</li>
+                    </ol>
+                </details>
+
+                <details>
+                    <summary>Mapping the Scans Shared Drive</summary>
+                    <h4>Windows</h4>
+                    <p>Go to <strong>Start</strong> → <strong>Map Network Drive</strong> and enter:</p>
+                    <code>\\files.sikuliaq.alaska.edu\Scans\</code>
+
+                    <h4>Mac</h4>
+                    <p>In Finder, go to <strong>Go → Connect to Server</strong> and enter:</p>
+                    <code>smb://files.sikuliaq.alaska.edu/Scans/</code>
+
+                    <h4>Linux</h4>
+                    <p>In File Manager, select <strong>Connect to Server</strong> and enter:</p>
+                    <code>WebDAV (HTTP) → files.sikuliaq.alaska.edu (Port 80) → /Scans</code>
+                </details>
+
+                <details>
+                    <summary>User Manuals</summary>
+                    <ul>
+                        <li><a href="#">Color Printer/Copier/Scanner User Guide</a></li>
+                        <li><a href="#">Black and White Printer User Guide</a></li>
+                    </ul>
+                </details>
             </div>
         </div>
     </section>
+
 
 
     <!-- footer section -->
