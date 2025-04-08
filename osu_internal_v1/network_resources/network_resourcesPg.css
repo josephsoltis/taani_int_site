@@ -523,7 +523,7 @@ ul {
 }
 
 #printing-scanning .container {
-    margin-bottom: -20px;
+    margin-bottom: 30px;
 }
 
 .printing-scanning h2 {
@@ -603,6 +603,11 @@ code {
     border-radius: 5px;
 }
 
+#printing-scanning details h4 {
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+
 #printing-scanning summary {
     cursor: pointer;
     font-size: 1.1rem;
@@ -623,7 +628,75 @@ code {
 
 
 
+/* network use */
+#network-use {
+    padding: 20px 100px;
+    background: var(--light-color);
+    background-color: #f8f9fa;
+    /* Light grey for a professional look */
+    border-top: 4px solid var(--primary-color);
+    /* Accent border */
+    border-bottom: 4px solid var(--primary-color);
+    margin-top: -20px;
+    position: relative;
+}
 
+#network-use h2 {
+    color: var(--primary-color);
+    border-bottom: 2px var(--grey-color) solid;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#network-use details {
+    background: var(--light-color);
+    padding: 10px;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#network-use .network-summary {
+    font-size: 1rem;
+
+}
+
+
+#network-use summary:hover {
+    color: var(--primary-color);
+}
+
+#network-use details[open] summary {
+    margin-bottom: 10px;
+}
+
+#network-use p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#network-use ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+#network-use ul li {
+    margin-bottom: 6px;
+}
+
+#network-use a {
+    text-decoration: none;
+}
+
+#network-use a:hover {
+    text-decoration: underline;
+}
+
+#network-use .container {
+    margin-bottom: 30px;
+}
 
 
 
