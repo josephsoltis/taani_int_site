@@ -263,18 +263,9 @@ body {
     padding: 0;
 }
 
-/* FAQ Container */
-.faq-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-}
-
 /* Search Bar */
 .search-section {
     text-align: center;
-    padding: 20px;
     background-color: var(--light-color);
 }
 
@@ -290,17 +281,32 @@ body {
 .faq-categories {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    /* Center the categories */
+    align-items: center;
+    /* Align them vertically */
+    gap: 15px;
+    /* Space between buttons */
+    flex-wrap: nowrap;
+    /* Prevents wrapping */
+    overflow-x: auto;
+    /* Enables horizontal scrolling if needed */
+    padding: 10px 0;
+    width: 100%;
 }
 
 .category {
     background-color: var(--primary-color);
     color: white;
     padding: 15px 30px;
-    margin: 0 15px;
     cursor: pointer;
     border-radius: 5px;
+    text-align: center;
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    flex-grow: 0;
+    /* Ensures they don't expand unnecessarily */
 }
+
 
 .category:hover {
     background-color: var(--secondary-color);

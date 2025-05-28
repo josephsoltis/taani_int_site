@@ -1,0 +1,753 @@
+:root {
+    --primary-color: #d23c0d;
+    --light-color: #fff;
+    --dark-color: #111;
+    --secondary-color: #d7d7d7;
+    --grey-color: #212529;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* overflow x hides vertical move bar */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Classes */
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-md {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* background set up */
+.background-image-long {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: #333;
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-grey {
+    background: var(--grey-color);
+    color: #fff;
+}
+
+/* text classes rem is fontsize realtive to root fontsize 16px in this case 2rem =32 */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-med {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* button CSS */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* margin top creates seperation */
+.btn-primary {
+    background: var(--primary-color);
+    color: black;
+    margin-top: 15px;
+}
+
+.btn-primary2 {
+    background: var(--primary-color);
+    color: rgba(255, 255, 255, 0.839);
+    margin-top: 15px;
+}
+
+.btn-light {
+    background: var(--light-color);
+    color: var(--primary-color);
+    margin-top: 15px;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+/* button goes all the way across */
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+    padding: 0px 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    font-size: 19px;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* last child targets last in that group */
+.navbar ul li:last-child a {
+    margin-left: 0px;
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    /* dark background color */
+    border: 1px solid #666;
+    /* border */
+    border-radius: 5px;
+    /* border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* box shadow */
+}
+
+.navbar ul li:hover ul.dropdown {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    /* smooth transition */
+}
+
+.navbar ul li ul.dropdown li {
+    display: block;
+    /* consistent padding */
+}
+
+.navbar ul li ul.dropdown li a {
+    font-family: Arial, sans-serif;
+    /* consistent font */
+    font-size: 16px;
+    /* consistent font size */
+    color: #fff;
+    /* light text color */
+    text-decoration: none;
+}
+
+.navbar ul li ul.dropdown li a:hover {
+    background-color: #666;
+    /* hover background color */
+    color: #fff;
+    /* hover text color */
+}
+
+
+
+/* Make the image banner span full width */
+.ship-image-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+.ship-banner-image {
+    width: 100%;
+    /* Ensures the image stretches across the screen */
+    height: auto;
+    /* Maintains aspect ratio */
+    max-height: 300px;
+    /* Optional: limit the height if the image is very tall */
+    object-fit: cover;
+    /* Ensures the image covers the section nicely */
+    /* display: block; */
+    /* Prevents extra spacing under the image */
+    /* object-position: center; */
+    /* Centers the image horizontally */
+}
+
+/* internet access section */
+#internet-access {
+    padding: 30px 100px;
+    background: var(--light-color);
+    background-color: #f8f9fa;
+    /* Light grey for a professional look */
+    border-top: 4px solid var(--primary-color);
+    /* Accent border */
+    border-bottom: 4px solid var(--primary-color);
+    margin-top: -20px;
+    position: relative;
+
+}
+
+#internet-access h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 2px var(--grey-color) solid;
+}
+
+#internet-access p,
+#internet-access ul {
+    font-size: 1rem;
+}
+
+#internet-access a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+#internet-access details {
+    background: var(--light-color);
+    padding: 10px;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#internet-access summary {
+    cursor: pointer;
+    font-size: 1.1rem;
+
+}
+
+#internet-access summary:hover {
+    color: var(--primary-color);
+}
+
+#internet-access details p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+#internet-access details ol {
+    margin-left: 30px;
+}
+
+#internet-access .troubleshooting {
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#internet-access .troubleshooting h3 {
+    color: var(--primary-color);
+    margin-top: -2px;
+}
+
+
+
+/* file shares */
+
+
+
+#file-shares {
+    padding: 30px 100px;
+    background: var(--light-color);
+    background-color: #f8f9fa;
+    /* Light grey for a professional look */
+    border-top: 4px solid var(--primary-color);
+    /* Accent border */
+    border-bottom: 4px solid var(--primary-color);
+    margin-top: -20px;
+    position: relative;
+}
+
+#file-shares h2 {
+    color: var(--primary-color);
+    border-bottom: 2px var(--grey-color) solid;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#file-shares p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Styling the table */
+#file-shares table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#file-shares th,
+#file-shares td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#file-shares th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+#file-shares tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Styling all instruction sections */
+#file-shares .instructions {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+#file-shares .instructions h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#file-shares .instructions ul,
+#file-shares .instructions ol {
+    padding-left: 20px;
+}
+
+#file-shares .instructions li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Link styling */
+#file-shares a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#file-shares a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #file-shares {
+        padding: 15px;
+    }
+
+    #file-shares table {
+        font-size: 0.9rem;
+    }
+
+    #file-shares .instructions {
+        padding: 10px;
+    }
+}
+
+.troubleshooting details {
+    background: var(--light-color);
+    padding: 10px;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.troubleshooting summary {
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.troubleshooting summary:hover {
+    color: var(--primary-color);
+}
+
+.troubleshooting details ol {
+    margin-left: 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.troubleshooting {
+    border-radius: 6px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.troubleshooting h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+.printing-scanning {
+    padding: 30px 100px;
+    background: var(--light-color);
+    background-color: #f8f9fa;
+    /* Light grey for a professional look */
+    border-top: 4px solid var(--primary-color);
+    /* Accent border */
+    border-bottom: 4px solid var(--primary-color);
+    margin-top: -20px;
+    position: relative;
+}
+
+#printing-scanning .container {
+    margin-bottom: 30px;
+}
+
+.printing-scanning h2 {
+    color: var(--primary-color);
+    border-bottom: 2px var(--grey-color) solid;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+.printing-scanning h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.printing-scanning p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.printer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.printer-table th,
+.printer-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.printer-table th {
+    background-color: var(--light-color);
+    font-weight: bold;
+}
+
+.connection-instructions {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.connection-instructions h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.scan-steps {
+    padding-left: 20px;
+}
+
+.scan-steps li {
+    margin-bottom: 5px;
+}
+
+code {
+    background: #e9ecef;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+#printing-scanning details {
+    background: var(--light-color);
+    padding: 10px;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#printing-scanning details h4 {
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+
+#printing-scanning summary {
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#printing-scanning summary:hover {
+    color: var(--primary-color);
+}
+
+#printing-scanning details p,
+#printing-scanning details ol {
+    margin-left: 15px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+
+
+/* network use */
+#network-use {
+    padding: 20px 100px;
+    background: var(--light-color);
+    background-color: #f8f9fa;
+    /* Light grey for a professional look */
+    border-top: 4px solid var(--primary-color);
+    /* Accent border */
+    border-bottom: 4px solid var(--primary-color);
+    margin-top: -20px;
+    position: relative;
+}
+
+#network-use h2 {
+    color: var(--primary-color);
+    border-bottom: 2px var(--grey-color) solid;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#network-use details {
+    background: var(--light-color);
+    padding: 10px;
+    border-left: 4px solid var(--primary-color);
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#network-use .network-summary {
+    font-size: 1rem;
+
+}
+
+
+#network-use summary:hover {
+    color: var(--primary-color);
+}
+
+#network-use details[open] summary {
+    margin-bottom: 10px;
+}
+
+#network-use p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#network-use ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+#network-use ul li {
+    margin-bottom: 6px;
+}
+
+#network-use a {
+    text-decoration: none;
+}
+
+#network-use a:hover {
+    text-decoration: underline;
+}
+
+#network-use .container {
+    margin-bottom: 30px;
+}
+
+
+
+/* Footer */
+.footer {
+    padding: 40px 40px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer ul li {
+    line-height: 2.5;
+}
+
+/* change any link in footer */
+.footer a {
+    color: #ccc;
+}
+
+.footer span {
+    color: #ccc;
+}
+
+/* any icon in footer */
+.footer i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 60%;
+    /* Ensures the image does not exceed the container width */
+    height: auto;
+    /* Allows the image to maintain its aspect ratio */
+}
+
+
+.footer-logo a:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+    transition: 0.5s;
+}

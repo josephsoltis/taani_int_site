@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Frequently Asked Questions | Oregon State Universty </title>
+    <title>Our Team | Oregon State Universty </title>
 
     <!-- everything linked below is to fonts from google fonts to be used later -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,11 +19,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- link to css file -->
-    <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="crewPg.CSS" />
     <!--to create favicon on site make sure image is saved in file that in html of project, href is link to folder location then type defines an icon   -->
     <link rel="shortcut icon" href="../Images/OSUfaviconlogo.png" type="image/x-icon" />
 
 </head>
+
+
+<section>
+
+
+
+</section>
 
 <body>
     <!-- navagation -->
@@ -54,27 +61,24 @@
                             <li><a href="../ship_info/ShipInfoPg.html#ship-layout">Ship Layout</a></li>
                             <li><a href="../ship_info/ShipInfoPg.html#ship-specs">Ship Specs</a></li>
                             <li><a href="../ship_info/ShipInfoPg.html#phone-list">Internal Phone List</a></li>
+                            <li><a href="../ship_info/ShipInfoPg.html#Our-Team">Our Team</a></li>
                             <!-- Add more links as needed -->
                         </ul>
                     </li>
                     <li>
-                        <a href="https://coriolix.taani.oregonstate.edu/">Coriolix</a>
+                        <a href="../network_resources/network_resourcesPg.html">Network Resources</a>
                     </li>
                     <li>
-                        <a href="../live_cams/LiveCamPg.html">Live Cams</a>
+                        <a href="../science/sciencePg.html">Science</a>
                     </li>
                     <li>
-                        <a href="../our_team/OurTeamPg.html" class="dropdown-toggle">Our Team</a>
+                        <a href="../crew/crewPg.html" class="dropdown-toggle">Crew</a>
                         <ul class="dropdown">
-                            <li><a href="../our_team/OurTeamPg.html#rv-taani-crew">R/V Taani Crew</a></li>
-                            <li><a href="../our_team/OurTeamPg.html#marine-technician-group">Marine Technician Group</a>
-                            </li>
                             <!-- Add more links as needed -->
                         </ul>
                     </li>
 
                     <!-- hoem to our wiki posibly also defien what lab watch is and procedures for deployments, it things, could be an external link to another site with a login -->
-
                     <!-- drop down to each section of page include ship map, food, safety, shared drives  -->
                     <!-- phpne list, unanoymus complaint field of some kind, internal safety mangament documents  -->
                     <li class="search-container">
@@ -86,32 +90,6 @@
         </div>
         </div>
     </nav>
-
-
-    <body>
-        <!-- Search Bar -->
-        <section class="search-section">
-            <div class="faq-container">
-                <input type="text" id="search-bar" placeholder="Search FAQs..." class="search-bar">
-            </div>
-        </section>
-
-        <!-- FAQ Categories -->
-        <section class="faq-categories">
-            <div class="category" onclick="filterFAQs('general')">General</div>
-            <div class="category" onclick="filterFAQs('safety')">Safety</div>
-            <div class="category" onclick="filterFAQs('crew')">Crew</div>
-            <div class="category" onclick="filterFAQs('science')">Science</div>
-        </section>
-
-        <!-- FAQ Results Section -->
-        <section class="faq-results">
-            <div id="faq-list"></div> <!-- FAQ list will go here -->
-            <div id="pagination" class="pagination"></div> <!-- Pagination controls -->
-        </section>
-
-        <script src="faq.js"></script>
-    </body>
 
 
 
@@ -146,7 +124,7 @@
                     <h4>Resources</h4>
                     <ul>
                         <li><a href="https://ceoas.oregonstate.edu/news">Media Inquires</a></li>
-                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="/osu_internal_v1/FAQ/faq.html">FAQ's</a></li>
                         <li><a href="https://www.unols.org/">UNOLS</a></li>
 
                     </ul>
@@ -163,7 +141,9 @@
         </div>
     </footer>
 
-    <script src="faq.js"></script>
+
+
+    <script src="crewPg.js"></script>
 </body>
 
 </html>
