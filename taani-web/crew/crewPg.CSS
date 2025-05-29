@@ -258,6 +258,64 @@ ul {
 
 
 
+/* Make the image banner span full width */
+.ship-image-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+.ship-banner-image {
+    width: 100%;
+    /* Ensures the image stretches across the screen */
+    height: auto;
+    /* Maintains aspect ratio */
+    max-height: 300px;
+    /* Optional: limit the height if the image is very tall */
+    object-fit: cover;
+    /* Ensures the image covers the section nicely */
+    /* display: block; */
+    /* Prevents extra spacing under the image */
+    /* object-position: center; */
+    /* Centers the image horizontally */
+}
+
+
+
+.body section {
+    padding: 30px 100px;
+    background: var(--light-color);
+    background-color: #f8f9fa;
+    border-top: 4px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
+    margin-top: -20px;
+    position: relative;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+    border-bottom: 2px var(--grey-color) solid;
+}
+
+.body p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.body ul {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.body a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 /* Footer */
 .footer {
     padding: 40px 40px;
