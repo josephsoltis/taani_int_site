@@ -1,0 +1,574 @@
+:root {
+    --primary-color: #d23c0d;
+    --light-color: #fff;
+    --dark-color: #111;
+    --secondary-color: #d7d7d7;
+    --grey-color: #212529;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* overflow x hides vertical move bar */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Classes */
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-md {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* background set up */
+.background-image-long {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: #333;
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-grey {
+    background: var(--grey-color);
+    color: #fff;
+}
+
+/* text classes rem is fontsize realtive to root fontsize 16px in this case 2rem =32 */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-med {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* button CSS */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* margin top creates seperation */
+.btn-primary {
+    background: var(--primary-color);
+    color: black;
+    margin-top: 15px;
+}
+
+.btn-primary2 {
+    background: var(--primary-color);
+    color: rgba(255, 255, 255, 0.839);
+    margin-top: 15px;
+}
+
+.btn-light {
+    background: var(--light-color);
+    color: var(--primary-color);
+    margin-top: 15px;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+/* button goes all the way across */
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+    padding: 0px 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    font-size: 19px;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* last child targets last in that group */
+.navbar ul li:last-child a {
+    margin-left: 0px;
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    /* dark background color */
+    border: 1px solid #666;
+    /* border */
+    border-radius: 5px;
+    /* border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* box shadow */
+}
+
+.navbar ul li:hover ul.dropdown {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    /* smooth transition */
+}
+
+.navbar ul li ul.dropdown li {
+    display: block;
+    /* consistent padding */
+}
+
+.navbar ul li ul.dropdown li a {
+    font-family: Arial, sans-serif;
+    /* consistent font */
+    font-size: 16px;
+    /* consistent font size */
+    color: #fff;
+    /* light text color */
+    text-decoration: none;
+}
+
+.navbar ul li ul.dropdown li a:hover {
+    background-color: #666;
+    /* hover background color */
+    color: #fff;
+    /* hover text color */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+/* Make the image banner span full width */
+.ship-image-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+.ship-banner-image {
+    width: 100%;
+    /* Ensures the image stretches across the screen */
+    height: auto;
+    /* Maintains aspect ratio */
+    max-height: 300px;
+    /* Optional: limit the height if the image is very tall */
+    object-fit: cover;
+    /* Ensures the image covers the section nicely */
+    /* display: block; */
+    /* Prevents extra spacing under the image */
+    /* object-position: center; */
+    /* Centers the image horizontally */
+}
+
+
+.body section {
+    padding: 30px 100px;
+    background: var(--light-color);
+    background-color: #f8f9fa;
+    border-top: 4px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
+    margin-top: -20px;
+    position: relative;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+    border-bottom: 2px var(--grey-color) solid;
+}
+
+.body p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Coriolix Section Styles */
+
+
+.coriolix-container .description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.coriolix-link {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--primary-color, #0055cc);
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.coriolix-link:hover {
+    background-color: var(--dark-color);
+    /* slightly darker than primary */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.coriolix-link:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.howto-dropdown {
+    margin-top: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.howto-dropdown summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.howto-dropdown ol {
+    margin: 0.5rem 0 0 1.25rem;
+    padding: 0;
+    list-style-type: decimal;
+    color: #333;
+}
+
+.howto-dropdown ol li {
+    margin-bottom: 0.5rem;
+    /* Adjust this value for more or less space */
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+
+.note {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    padding-top: 0.8rem;
+}
+
+
+
+/* data section */
+.udp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.udp-table th,
+.udp-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.udp-table thead {
+    background-color: #eee;
+    font-weight: 600;
+}
+
+.udp-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.underway-container h3 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.underway-container a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+
+/* science section */
+
+#science-on-board p {
+    max-width: 800px;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+#science-on-board .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.sensor-card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.sensor-card[open] {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sensor-card summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    list-style: none;
+    transition: background 0.2s ease;
+}
+
+.sensor-card summary:hover {
+    background-color: #e0f0ff;
+}
+
+.sensor-card summary::-webkit-details-marker {
+    display: none;
+}
+
+
+
+.sensor-card summary h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+}
+
+.sensor-card .card-body {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid #ddd;
+}
+
+.sensor-card .card-body h4 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* Disembarking Info Section */
+
+
+
+
+#disembarking-info p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    /* more space below paragraphs */
+}
+
+#disembarking-info p a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+#disembarking-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    /* more space below h3 */
+}
+
+#disembarking-info ul {
+    margin-bottom: 1.5rem;
+    /* more space below ul */
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    /* add some left padding to the list items */
+}
+
+
+
+
+/* Footer */
+.footer {
+    padding: 40px 40px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+}
+
+.footer ul li {
+    line-height: 2.5;
+}
+
+/* change any link in footer */
+.footer a {
+    color: #ccc;
+}
+
+.footer span {
+    color: #ccc;
+}
+
+/* any icon in footer */
+.footer i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 60%;
+    /* Ensures the image does not exceed the container width */
+    height: auto;
+    /* Allows the image to maintain its aspect ratio */
+}
+
+
+.footer-logo a:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+    transition: 0.5s;
+}

@@ -255,6 +255,12 @@ ul {
     /* hover text color */
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
 
 /* Basic Styles */
 body {

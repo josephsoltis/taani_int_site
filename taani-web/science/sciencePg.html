@@ -4,141 +4,460 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>check</title>
+
+    <title>Our Team | Oregon State Universty </title>
+
+    <!-- everything linked below is to fonts from google fonts to be used later -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link to css file -->
+    <link rel="stylesheet" href="sciencePg.CSS" />
+    <!--to create favicon on site make sure image is saved in file that in html of project, href is link to folder location then type defines an icon   -->
+    <link rel="shortcut icon" href="../Images/OSUfaviconlogo.png" type="image/x-icon" />
+
 </head>
 
+
 <body>
-Hello Friends
+    <!-- navagation -->
+    <nav class="navbar">
+        <div class="container bg-light">
+            <!-- div for logo -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../Images/OSUVertLogoBlack.png" alt="logo" width="300px" height="100px" />
+                </a>
+            </div>
+
+            <div class="main-menu">
+                <ul>
+                    <!-- main menu, navigation bar li is link will have to make a seperate .html for each page last is a button -->
+                    <li>
+                        <a href="../index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="../index.html#welcome-vid">Welcome Video</a>
+                            <li><a href="../index.html#navigation-ship">Ship Navigation</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../ship_info/ShipInfoPg.html">Ship Info</a>
+                        <ul class="dropdown">
+                            <li><a href="../ship_info/ShipInfoPg.html#safety-docs">Safety Documents</a>
+                            <li>
+                            <li><a href="../ship_info/ShipInfoPg.html#ship-layout">Ship Layout</a></li>
+                            <li><a href="../ship_info/ShipInfoPg.html#ship-specs">Ship Specs</a></li>
+                            <li><a href="../ship_info/ShipInfoPg.html#phone-list">Internal Phone List</a></li>
+                            <li><a href="../ship_info/ShipInfoPg.html#Our-Team">Our Team</a></li>
+                            <!-- Add more links as needed -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../network_resources/network_resourcesPg.html">Network Resources</a>
+                        <ul class="dropdown">
+                            <li><a href="../network_resources/network_resourcesPg.html#internet-access">Internet
+                                    Access</a>
+                            <li><a href="../network_resources/network_resourcesPg.html#file-shares">File Sharing</a>
+                            <li>
+                            <li><a href="../network_resources/network_resourcesPg.html#printing-scanning">Printing and
+                                    Scanning</a></li>
+                            <li><a href="../network_resources/network_resourcesPg.html#network-use">Acceptable
+                                    Use & Cybersecurity</a></li>
+                            <!-- Add more links as needed -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../science/sciencePg.html">Science</a>
+                        <ul class="dropdown">
+                            <li><a href="../science/sciencePg.html#Coriolix">Coriolix</a></li>
+                            <li><a href="../science/sciencePg.html#underway-data">Underway Data</a></li>
+                            <li><a href="../science/sciencePg.html#science-on-board">Science Onboard</a></li>
+                            <li><a href="../science/sciencePg.html#disembarking-info">Disembarking Information</a></li>
+                            <!-- Add more links as needed -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../crew/crewPg.html" class="dropdown-toggle">Crew</a>
+                        <ul class="dropdown">
+                            <li><a href="../crew/crewPg.html#shipboard-ops">Shipboard Ops</a>
+                            <li><a href="../crew/crewPg.html#onboarding">Onboarding</a></li>
+                            <li><a href="../crew/crewPg.html#hr-benefits">HR, Benefits & Policies</a></li>
+                            <li><a href="../crew/crewPg.html#tools-admin">Tools & Admin Resources</a></li>
+                            <li><a href="../crew/crewPg.html#worklife-perks">Work-Life & Employee Perks</a></li>
+                            <li><a href="../crew/crewPg.html#shore-support">Shore Support</a></li>
+                            <!-- Add more links as needed -->
+                        </ul>
+                    </li>
+
+                    <!-- hoem to our wiki posibly also defien what lab watch is and procedures for deployments, it things, could be an external link to another site with a login -->
+                    <!-- drop down to each section of page include ship map, food, safety, shared drives  -->
+                    <!-- phpne list, unanoymus complaint field of some kind, internal safety mangament documents  -->
+                    <li class="search-container">
+                        search here
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+
+    <div class="container-si-banner">
+        <!-- Picture of Taani -->
+        <div class="ship-image-banner">
+            <img src="../Images/3_ship_rcrv1.jpg" alt="Taani" class="ship-banner-image">
+        </div>
+    </div>
+
+    <div class="body">
+        <section id="Coriolix">
+            <div class="coriolix-container">
+                <h2 class="text-xl">Coriolix</h2>
+                <p class="description">
+                    Coriolix is the onboard data logging and visualization tool used on OSU research vessels. It allows
+                    for real-time and historical data analysis from various shipboard sensors.
+                </p>
+
+                <a href="https://coriolix.sikuliaq.alaska.edu/" class="coriolix-link" target="_blank" rel="noopener">
+                    Visit Coriolix →
+                </a>
+
+                <details class="howto-dropdown">
+                    <summary>Creating Charts in Coriolix</summary>
+                    <ol>
+                        <li>Login using your shipboard credentials</li>
+                        <li>Select a sensor feed from the left panel</li>
+                        <li>Click "Add to Graph" to visualize</li>
+                        <li>Customize axes, labels, and time range</li>
+                        <li>Click "Save Layout" to preserve your setup</li>
+                    </ol>
+                </details>
+
+                <details class="howto-dropdown">
+                    <summary>Event Logging</summary>
+                    <ol>
+                        <li>Login using your shipboard credentials</li>
+                        <li>Select a sensor feed from the left panel</li>
+                        <li>Click "Add to Graph" to visualize</li>
+                        <li>Customize axes, labels, and time range</li>
+                        <li>Click "Save Layout" to preserve your setup</li>
+                    </ol>
+                </details>
+
+                <p class="note">
+                    For assistance, contact the marine tech or refer to the onboard science manual.
+                </p>
+            </div>
+        </section>
+
+
+
+
+        <section id="underway-data">
+            <div class="container underway-container">
+                <h2 class="text-xl">Underway Data & Network Systems</h2>
+                <p>This section provides information about the ship's data infrastructure for science operations.</p>
+
+
+
+                <!-- UDP Feeds -->
+                <h3>UDP Data Feeds</h3>
+                <p>Various sensors broadcast data over the internal network using UDP. Refer to the table below for port
+                    numbers and protocols. Use the port numbers to listen unless otherwise specified.</p>
+
+                <table class="udp-table">
+                    <thead>
+                        <tr>
+                            <th>Feed Name</th>
+                            <th>Port Number</th>
+                            <th>Protocol</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GPS Position</td>
+                            <td>5001</td>
+                            <td>UDP</td>
+                            <td>Main navigation data</td>
+                        </tr>
+                        <tr>
+                            <td>Sound Velocity</td>
+                            <td>5002</td>
+                            <td>UDP</td>
+                            <td>Used by sonar systems</td>
+                        </tr>
+                        <!-- Add more as needed -->
+                    </tbody>
+                </table>
+
+                <!-- KVM & Video Matrix -->
+                <h3>KVM & Video Matrix System</h3>
+                <p>The ship uses a matrix switcher to route video and keyboard signals to multiple workstations.
+                    Operators can switch sources from lab stations or the bridge. Contact Marine Techs for assistance.
+                </p>
+                <!-- Time Server -->
+                <h3>Time Server Access</h3>
+                <p>The ship provides an onboard NTP server to synchronize science and nav systems. Details on IP and
+                    access credentials will be provided soon.</p>
+
+                <!-- Mounted Drives -->
+                <h3>Accessing Shared Drives</h3>
+                <p>Shared drives for science data can be accessed over SMB or NFS. Paths, user credentials, and mount
+                    instructions will be posted at cruise start.</p>
+                <p>See the <a href="../network_resources/network_resourcesPg.html#file-shares">Mounting Drives Guide</a>
+                    for detailed instructions.</p>
+
+                <!-- Wire Tension Monitoring -->
+                <h3>Wire Tension Monitoring</h3>
+                <p>Winch systems provide live tension readings via serial outputs. These feeds are viewable from the lab
+                    and bridge. Contact a Marine Tech for setup instructions.</p>
+
+            </div>
+        </section>
+
+
+        <section id="science-on-board">
+            <h2 class="text-xl">Science on Board</h2>
+            <p>This section outlines the various scientific sensors and systems available on the ship.</p>
+
+            <div class="card-grid">
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>CTD</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Deployment procedures:</strong> Deployment steps, data access, and key contacts for
+                            CTD use.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>Typical issues:</strong> Common deployment or sensor faults and how to resolve them.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>XBTs</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Launch procedures:</strong> How to launch XBTs, software tools used, and safety
+                            notes.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>Common problems:</strong> Cable breaks, software crashes, and resolutions.</p>
+                    </div>
+                </details>
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>EM712</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Guidelines:</strong> Multibeam echosounder operational guidance.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>Checklist:</strong> Error detection and recovery methods.</p>
+                    </div>
+                </details>
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>EM124</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Instructions:</strong> Deep-water multibeam system operation.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>Issues:</strong> Performance troubleshooting and reconnection.</p>
+                    </div>
+                </details>
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>Knudsen 3.5 & 12 kHz</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Info:</strong> Sub-bottom profiling and echo sounding usage.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>Fixes:</strong> Signal loss or noisy return solutions.</p>
+                    </div>
+                </details>
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>EK80</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Startup:</strong> Calibration, recording, and operation.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>Noise:</strong> Ping failure and noise resolutions.</p>
+                    </div>
+                </details>
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>ADCPs and UHDAS</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Setup:</strong> Mounting, configuration, and UHDAS use.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>Data issues:</strong> Sync problems and drift corrections.</p>
+                    </div>
+                </details>
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>USBL</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Deployment:</strong> Tracking system setup and use.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>Errors:</strong> Dropouts, mispositioning, echo signal corrections.</p>
+                    </div>
+                </details>
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>OpenCPN</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Navigation:</strong> Chart loading, GPS integration, overlays.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>UI bugs:</strong> Lag, GPS failures, and interface fixes.</p>
+                    </div>
+                </details>
+
+                <details class="sensor-card">
+                    <summary>
+                        <h3>Wave Radar</h3>
+                    </summary>
+                    <div class="card-body">
+                        <h4>Operations</h4>
+                        <p><strong>Monitoring:</strong> Sea state data interpretation.</p>
+                        <h4>Troubleshooting</h4>
+                        <p><strong>Dropout fixes:</strong> Interference and signal handling.</p>
+                    </div>
+                </details>
+
+
+            </div>
+            <p class="note">
+                For assistance, contact the marine tech or refer to the onboard science manual.
+            </p>
+        </section>
+
+
+
+        <section id="disembarking-info">
+            <div class="container">
+                <h2 class="text-xl">Disembarking & At-Sea Tips and Procedures</h2>
+                <p>Welcome aboard! Please review the following important information to ensure your safety and smooth
+                    operations during the cruise.</p>
+
+                <h3>Muster Location & Safety Briefing</h3>
+                <p>All personnel must attend the safety briefing and muster drill within the first hour of boarding. The
+                    muster station is located on the starboard side, main deck (Deck 3), near the aft stairs. Pay close
+                    attention to emergency signals and procedures explained by the safety officer.</p>
+
+                <h3>Before Cruise Procedures</h3>
+                <ul>
+                    <li><strong>Medical Clearance:</strong> Submit all required medical forms and clearances to the
+                        cruise coordinator before embarkation.</li>
+                    <li><strong>Gear Check:</strong> Ensure all personal protective equipment (PPE) and necessary
+                        scientific gear are properly packed and labeled.</li>
+                    <li><strong>Briefings:</strong> Attend all pre-cruise science and operations briefings to
+                        familiarize yourself with ship protocols and scientific objectives.</li>
+                    <li><strong>Communications Setup:</strong> Check in with the IT department to set up network access
+                        and any required software tools.</li>
+                    <li><strong>Emergency Contacts:</strong> Familiarize yourself with the onboard emergency contact
+                        list and procedures.</li>
+                </ul>
+
+                <h3>At Sea Etiquette & Tips</h3>
+                <ul>
+                    <li>Respect quiet hours in crew quarters and labs.</li>
+                    <li>Keep walkways clear and secure your equipment during rough seas.</li>
+                    <li>Follow all safety signage and crew instructions promptly.</li>
+                    <li>Report any safety hazards or medical concerns immediately to the bridge or medical officer.</li>
+                </ul>
+
+                <p class="note">For further details, consult the ship’s safety manual or contact the Marine Techs team.
+                </p>
+            </div>
+        </section>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- footer section -->
+    <footer class="footer bg-grey">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="/index.html">
+                        <img src="../Images/OSUVertLogoWhite.png" alt="logo">
+                    </a>
+                    <a href="https://www.linkedin.com/school/oregon-state-university/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/oregonstate/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/oregonstate/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/oregonstate" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/user/OregonStateUniv" target="_blank"><i
+                            class="fab fa-youtube"></i></a>
+
+                </div>
+                <div class="footer-company">
+                    <h4>Universty Info</h4>
+                    <ul>
+                        <li><a href="https://oregonstate.edu/">Oregon State Universty</a></li>
+                        <li><a href="https://ceoas.oregonstate.edu/ships">Ship Operations</a></li>
+                        <li><a href="https://ceoas.oregonstate.edu/research">Reaserch</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-resources">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://ceoas.oregonstate.edu/news">Media Inquires</a></li>
+                        <li><a href="../FAQ/faq.html">FAQ's</a></li>
+                        <li><a href="https://www.unols.org/">UNOLS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:martech@coas.oregonstate.edu">martech@coas.oregonstate.edu</a></li>
+                        <li><span href="#">Main Lab Phone: 000</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="sciencePg.js"></script>
 </body>
 
 </html>
-
-<section id="ctd">
-    <div class="container">
-        <h2 class="text-xl">CTD</h2>
-        <div class="connecting">
-            <p>Information about CTD operations will go here. Include deployment procedures, data access, and any key contacts.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Describe typical CTD issues and their fixes.</p>
-        </div>
-    </div>
-</section>
-
-<section id="xbts">
-    <div class="container">
-        <h2 class="text-xl">XBTs</h2>
-        <div class="connecting">
-            <p>Details about launching XBTs, software use, and safety protocols.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Common XBT issues and how to resolve them.</p>
-        </div>
-    </div>
-</section>
-
-<section id="em712">
-    <div class="container">
-        <h2 class="text-xl">EM712</h2>
-        <div class="connecting">
-            <p>Operation guidelines for the EM712 multibeam echosounder system.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Checklist for EM712 system errors and recovery steps.</p>
-        </div>
-    </div>
-</section>
-
-<section id="em124">
-    <div class="container">
-        <h2 class="text-xl">EM124</h2>
-        <div class="connecting">
-            <p>Instructions for using the EM124 deep-water multibeam system.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Steps to address performance or connection problems.</p>
-        </div>
-    </div>
-</section>
-
-<section id="knudsen">
-    <div class="container">
-        <h2 class="text-xl">Knudsen 3.5 kHz & 12 kHz</h2>
-        <div class="connecting">
-            <p>Setup and usage info for Knudsen sub-bottom profiler and echosounder.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Audio signal issues and data interpretation problems.</p>
-        </div>
-    </div>
-</section>
-
-<section id="ek80">
-    <div class="container">
-        <h2 class="text-xl">EK80</h2>
-        <div class="connecting">
-            <p>Steps for EK80 echosounder startup, calibration, and data recording.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Tips for resolving ping issues or data quality drops.</p>
-        </div>
-    </div>
-</section>
-
-<section id="adcp">
-    <div class="container">
-        <h2 class="text-xl">ADCPs and UHDAS</h2>
-        <div class="connecting">
-            <p>Info about vessel-mounted ADCPs and the UHDAS data system.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Velocity data issues and sync errors between ADCP and UHDAS.</p>
-        </div>
-    </div>
-</section>
-
-<section id="usbl">
-    <div class="container">
-        <h2 class="text-xl">USBL</h2>
-        <div class="connecting">
-            <p>Guide for USBL acoustic tracking systems, deployment, and use.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Fixes for dropouts, mispositioning, or signal interference.</p>
-        </div>
-    </div>
-</section>
-
-<section id="opencpn">
-    <div class="container">
-        <h2 class="text-xl">OpenCPN</h2>
-        <div class="connecting">
-            <p>Navigation tool info: adding charts, using GPS, and overlays in OpenCPN.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Help with slow map updates, GPS signal, or display errors.</p>
-        </div>
-    </div>
-</section>
-
-<section id="wave-radar">
-    <div class="container">
-        <h2 class="text-xl">Wave Radar</h2>
-        <div class="connecting">
-            <p>Use and interpretation of Wave Radar for sea state monitoring.</p>
-        </div>
-        <div class="troubleshooting">
-            <h3>Troubleshooting</h3>
-            <p>Interference problems or data dropouts and how to fix them.</p>
-        </div>
-    </div>
-</section>
