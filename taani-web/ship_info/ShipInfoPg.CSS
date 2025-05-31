@@ -255,6 +255,12 @@ ul {
     /* hover text color */
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
 /* Ship info main paige */
 
 /* Make the image banner span full width */

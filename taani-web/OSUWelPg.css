@@ -258,6 +258,12 @@ ul {
     margin-right: 10px;
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
 /* hero */
 .hero {
     margin-bottom: 0px;

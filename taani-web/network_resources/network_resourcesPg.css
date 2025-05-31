@@ -255,6 +255,11 @@ ul {
     /* hover text color */
 }
 
+.search-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
 
 
 /* Make the image banner span full width */
@@ -337,6 +342,12 @@ ul {
 
 #internet-access details ol {
     margin-left: 30px;
+
+}
+
+#internet-access details ol li {
+    margin-bottom: 5px;
+    font-size: 1rem;
 }
 
 #internet-access .troubleshooting {
