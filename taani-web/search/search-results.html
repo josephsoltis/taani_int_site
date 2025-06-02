@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Search Results for "<span id="query"></span>"</h1>
+    <ul id="results"></ul>
+
+    <script>
+        // Sample data to search through
+        const data = [
+            { url: "/page1.html", title: "First Page", description: "This is the first page." },
+            { url: "/page2.html", title: "Second Page", description: "This is the second page." },
+            { url: "/crew.html", title: "Crew Information", description: "Details about the crew members." },
+            // Add more items here
+        ];
+
+        // Function to get URL param
+        function getQueryParam(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        const query = getQueryParam('q') || '';
+        document.getElementById('query').textContent = query;
+
+        const resultsContainer = document.getElementById('results');
+
+        if (!query) {
+            resultsContainer.innerHTML = '<li>Please enter a search query.</li>';
+        } else {
+            const results = data.filter(item =>
+                item.title.toLowerCase().includes(query.toLowerCase()) ||
+                item.description.toLowerCase().includes(query.toLowerCase())
+            );
+
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '<li>No results found.</li>';
+            } else {
+                results.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${item.url}">${item.title}</a><p>${item.description}</p>`;
+                    resultsContainer.appendChild(li);
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>

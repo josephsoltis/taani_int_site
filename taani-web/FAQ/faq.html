@@ -95,7 +95,11 @@
                         </ul>
                     </li>
                     <li class="search-container">
-                        search here
+                        <form id="search-form" class="search-form">
+                            <input type="text" id="search-input" placeholder="Search..." required />
+                            <button type="submit" aria-label="Search" class="search-btn"><i
+                                    class="fas fa-search"></i></button>
+                        </form>
                     </li>
                 </ul>
             </div>
@@ -179,6 +183,7 @@
     </footer>
 
     <script src="faq.js"></script>
+    <script src="../search/search.js"></script>
 </body>
 
 </html>

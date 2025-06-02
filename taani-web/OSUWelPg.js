@@ -1,6 +1,6 @@
 const DATA_LOCATION_STRING = `https://coriolix.taani.oregonstate.edu/api`;
 
-// search button feature
+
 
 /* navdisplay box section */
 
@@ -47,3 +47,18 @@ updateLiveData();
 
 // Optionally, set an interval to refresh the data periodically (e.g., every 10 seconds)
 setInterval(updateLiveData, 10000);
+
+
+
+// search feature
+const searchForm = document.querySelector('.search-form');
+const searchInput = document.getElementById('search-input');
+const searchBtn = document.querySelector('.search-btn');
+
+searchBtn.addEventListener('click', (e) => {
+    if (!searchForm.classList.contains('expanded')) {
+        e.preventDefault(); // prevent submitting form on first click
+        searchForm.classList.add('expanded');
+        searchInput.focus();
+    }
+});

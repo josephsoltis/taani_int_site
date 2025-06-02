@@ -100,9 +100,12 @@
                     <!-- drop down to each section of page include ship map, food, safety, shared drives  -->
                     <!-- phpne list, unanoymus complaint field of some kind, internal safety mangament documents  -->
                     <li class="search-container">
-                        search here
+                        <form id="search-form" class="search-form">
+                            <input type="text" id="search-input" placeholder="Search..." required />
+                            <button type="submit" aria-label="Search" class="search-btn"><i
+                                    class="fas fa-search"></i></button>
+                        </form>
                     </li>
-                </ul>
             </div>
 
         </div>
@@ -334,6 +337,7 @@
     </footer>
 
 
+    <script src="../search/search.js"></script>
 
     <script src="crewPg.js"></script>
 </body>
