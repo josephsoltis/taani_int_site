@@ -322,6 +322,19 @@ h2 {
     text-decoration: underline;
 }
 
+
+details {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
 /* Footer */
 .footer {
     padding: 40px 40px;
