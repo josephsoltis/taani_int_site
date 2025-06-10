@@ -1,4 +1,4 @@
-const DATA_LOCATION_STRING = `https://coriolix.taani.oregonstate.edu/api`;
+const DATA_LOCATION_STRING = `https://10.129.222.80/demo/api`;
 
 
 

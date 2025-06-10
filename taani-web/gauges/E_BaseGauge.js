@@ -1,5 +1,5 @@
 
-let dataLocationString = "https://coriolix.ceoas.oregonstate.edu/demo/api";
+let dataLocationString = "https://10.129.222.80/demo/api";
 
 // Base class for shared CORIOLIX gauge styles
 export class BaseGauge {
@@ -227,7 +227,7 @@ export class BaseGauge {
 
   getPointerOptions() {
     return {
-      icon: "image:///osu_internal_v1/gauges/osu_rcrv_heading_compass_vert.png",
+      icon: "image:///taani-web/gauges/osu_rcrv_heading_compass_vert.png",
       width: 100,  // set width of the image
       height: 1000, // set height of the image
     };
