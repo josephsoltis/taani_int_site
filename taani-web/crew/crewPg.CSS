@@ -380,6 +380,19 @@ details {
     padding-left: 1rem;
 }
 
+details ul {
+    margin-left: 1rem;
+}
+
+details ul li {
+    margin-bottom: 0.3rem;
+}
+
+details ul li:before {
+    content: "-";
+    margin-right: 10px;
+}
+
 summary {
     cursor: pointer;
     font-weight: bold;
