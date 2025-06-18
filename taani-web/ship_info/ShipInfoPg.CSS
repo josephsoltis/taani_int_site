@@ -772,9 +772,21 @@ body {
     margin-bottom: 30px;
 }
 
+.tech-divider h2 {
+    font-size: 2rem;
+    /* Larger font for the title */
+    margin-bottom: 10px;
+    /* Spacing below the heading */
+    color: var(--light-color);
+    /* Use primary color for heading */
+    text-align: center;
+    /* Center align the heading */
+}
+
 .tech-divider p {
     margin-right: 50px;
     margin-left: 50px;
+    color: var(--light-color);
 }
 
 .team-grid {
