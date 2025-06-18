@@ -768,7 +768,7 @@ body {
     background-color: var(--grey-color);
     border-radius: 50px;
     padding: 20px;
-    border: 20px solid var(--secondary-color);
+    border: 10px solid var(--primary-color);
     margin-bottom: 30px;
 }
 
